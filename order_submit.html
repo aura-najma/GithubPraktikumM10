@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danus Digital - Order Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color:  #82cafd;
+            color: #003366;
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+            background: linear-gradient(to right, #0066cc, #003366);
+            padding: 10px;
+            border-radius: 5px;
+            }
+
+
+        p {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: #fff;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #0066cc,#003366);
+            padding: 5px; /* Menambahkan padding untuk memperjelas latar belakang */
+            border-radius: 5px; /* Menambahkan border-radius untuk membuat sudut elemen lebih lembut */
+            display: inline-block; /* Membuat elemen label inline-block untuk mendukung padding dan border-radius */
+            }
+
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 2px solid #0066cc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Danus Digital - Order Form</h2>
+    <p>Harga bomboloni = 5000</p>
+    <p>Harga risol = 4000</p>
+    <form action="http://127.0.0.1:5000/order_submit" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="quantity_bomboloni">Jumlah Bomboloni:</label>
+        <input type="number" id="quantity_bomboloni" name="quantity_bomboloni" required min="1" step="1">
+
+        <label for="quantity_risol">Jumlah Risol:</label>
+        <input type="number" id="quantity_risol" name="quantity_risol" required min="1" step="1">
+
+        <label for="amount_paid">Jumlah Uang yang Dibayar:</label>
+        <input type="number" id="amount_paid" name="amount_paid" required min="1" step="1">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+
+</html>

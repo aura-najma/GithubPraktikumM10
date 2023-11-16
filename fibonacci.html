@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #82cafd; /* Light Blue */
+            color: #003366; /* Navy Blue */
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff; /* White */
+            background-color: #003366; /* Navy Blue */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Fibonacci Sequence with Length {{ n }}</h2>
+    <p> <strong>{{ sequence|join(' ') }}</strong> </p>
+</body>
+
+</html>
