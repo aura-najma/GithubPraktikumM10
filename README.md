@@ -7,4 +7,5 @@
 6. fibonacci_input.html = template form input angka untuk panjang fibonacci untuk rute /fibonacci
 7. order_submit.html = template form input data danus digital yang akan menyambung ke rute /order_submit
 8. portofolio_aura.html =  template yang ditampilkan untuk rute /portofolio_aura
-9. welcome.html = template yang ditampilkan untuk index awal atau rute /
+9. praktikumM10.py = kode phyton Flask untuk semuanya.
+10. welcome.html = template yang ditampilkan untuk index awal atau rute /
